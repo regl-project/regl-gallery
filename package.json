@@ -1,12 +1,14 @@
 {
-  "name": "regl",
-  "version": "1.1.1",
-  "description": "regl is a fast functional WebGL framework.",
-  "main": "regl.js",
+  "name": "regl-examples",
+  "version": "1.0.0",
+  "description": "examples for the functional webgl framework regl",
+  "main": "index.js",
   "directories": {
     "example": "example"
   },
-  "dependencies": {},
+  "dependencies": {
+    "regl": "^1.1.1"
+  },
   "devDependencies": {
     "angle-normals": "^1.0.0",
     "baboon-image": "^2.0.0",
@@ -66,26 +68,12 @@
     "vertices-bounding-box": "^1.0.0"
   },
   "scripts": {
-    "test": "node bin/check-dependecies.js && standard | snazzy && tape test/util/index.js | faucet",
-    "test-browser": "budo test/util/browser.js --open",
-    "cover": "istanbul cover test/util/index.js",
-    "bench-browser": "budo bench/bench.js --open",
-    "bench-node": "node bench/bench.js",
-    "bench-graph": "node bench/bench-graph.js",
-    "bench-history": "node bench/bench-history",
-    "build": "npm run build-script && npm run build-min && npm run build-bench && npm run build-gallery && npm run build-size && npm run build-compare",
-    "build-size": "browserify --full-paths --transform ./bin/remove-check.js regl.js | discify > www/size.html",
-    "build-script": "browserify regl.js --standalone createREGL > dist/regl.js",
-    "build-min": "node bin/build-min.js",
-    "build-bench": "browserify bench/bench.js | indexhtmlify > www/bench.html",
     "build-gallery": "node bin/build-gallery.js",
-    "build-compare": "node bin/build-compare.js",
-    "build-docs": "remark API.md -o API.md",
-    "lint-docs": "remark --frail --quiet README.md API.md DEVELOPING.md CHANGES.md"
+    "build-compare": "node bin/build-compare.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikolalysenko/regl.git"
+    "url": "git+https://github.com/freeman-lab/regl-examples.git"
   },
   "keywords": [
     "webgl",
@@ -104,7 +92,7 @@
   "author": "Mikola Lysenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikolalysenko/regl/issues"
+    "url": "https://github.com/freeman-lab/regl-examples/issues"
   },
   "standard": {
     "ignore": [
