@@ -12,7 +12,7 @@
  */
 const webglCanvas = document.body.appendChild(document.createElement('canvas'))
 const fit = require('canvas-fit')
-const regl = require('../regl')({
+const regl = require('regl')({
   canvas: webglCanvas,
   extensions: ['webgl_draw_buffers', 'oes_texture_float']
 })

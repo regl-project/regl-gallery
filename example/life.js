@@ -5,7 +5,7 @@
 
  */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 
 const RADIUS = 512
 const INITIAL_CONDITIONS = (Array(RADIUS * RADIUS * 4)).fill(0).map(

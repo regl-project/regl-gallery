@@ -5,7 +5,7 @@
 
  */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 const mouse = require('mouse-change')()
 
 require('resl')({

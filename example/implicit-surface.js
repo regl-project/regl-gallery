@@ -5,7 +5,7 @@
 
  */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 
 const camera = require('./util/camera')(regl, {
   center: [-12, 5, 1],

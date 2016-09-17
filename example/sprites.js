@@ -6,7 +6,7 @@
 
  */
 
-const regl = require('../regl')({
+const regl = require('regl')({
   extensions: 'OES_texture_float'
 })
 const mouse = require('mouse-change')()

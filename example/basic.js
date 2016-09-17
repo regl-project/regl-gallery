@@ -5,7 +5,7 @@
  */
 
 // The default method exposed by the module wraps a canvas element
-const regl = require('../regl')()
+const regl = require('regl')()
 
 // This clears the color buffer to black and the depth buffer to 1
 regl.clear({

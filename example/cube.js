@@ -5,7 +5,7 @@
 
  */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 const mat4 = require('gl-mat4')
 
 var cubePosition = [

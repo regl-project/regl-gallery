@@ -20,7 +20,7 @@ var gl = c.getContext('webgl', {
 })
 
 const fit = require('canvas-fit')
-const regl = require('../regl')({gl: gl})
+const regl = require('regl')({gl: gl})
 const mat4 = require('gl-mat4')
 const camera = require('canvas-orbit-camera')(webglCanvas)
 window.addEventListener('resize', fit(webglCanvas), false)

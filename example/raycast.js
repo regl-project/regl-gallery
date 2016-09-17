@@ -9,7 +9,7 @@
 
 const canvas = document.body.appendChild(document.createElement('canvas'))
 const fit = require('canvas-fit')
-const regl = require('../regl')({canvas: canvas})
+const regl = require('regl')({canvas: canvas})
 const mat4 = require('gl-mat4')
 const vec3 = require('gl-vec3')
 window.addEventListener('resize', fit(canvas), false)

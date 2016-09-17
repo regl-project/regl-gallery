@@ -5,7 +5,7 @@
 
  */
 /* global AudioContext */
-const regl = require('../regl')()
+const regl = require('regl')()
 
 // First we need to get permission to use the microphone
 require('getusermedia')({audio: true}, function (err, stream) {

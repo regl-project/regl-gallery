@@ -3,7 +3,7 @@
 
   <p> This example shows how to draw a mesh with regl </p>
 */
-const regl = require('../regl')()
+const regl = require('regl')()
 const mat4 = require('gl-mat4')
 const bunny = require('bunny')
 

@@ -8,7 +8,7 @@
 */
 
 // As usual, we start by creating a full screen regl object
-const regl = require('../regl')()
+const regl = require('regl')()
 
 // Next we create our command
 const draw = regl({

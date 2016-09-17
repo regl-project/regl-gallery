@@ -5,7 +5,7 @@
 
  */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 
 const drawCheckerboard = regl({
   frag: `

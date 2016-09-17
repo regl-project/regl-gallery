@@ -4,7 +4,7 @@
   <p> This example demonstrates how to draw line loops and line strips . </p>
 */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 var mat4 = require('gl-mat4')
 var rng = require('seedrandom')('my_seed')
 

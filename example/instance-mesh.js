@@ -11,7 +11,7 @@ const fit = require('canvas-fit')
 const normals = require('angle-normals')
 
 const canvas = document.body.appendChild(document.createElement('canvas'))
-const regl = require('../regl')({canvas: canvas, extensions: ['angle_instanced_arrays']})
+const regl = require('regl')({canvas: canvas, extensions: ['angle_instanced_arrays']})
 const camera = require('canvas-orbit-camera')(canvas)
 window.addEventListener('resize', fit(canvas), false)
 

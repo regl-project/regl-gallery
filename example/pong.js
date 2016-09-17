@@ -14,7 +14,7 @@
 */
 /* global AudioContext */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 const vec2 = require('gl-vec2')
 
 // we keep track of the mouse y-coordinate.

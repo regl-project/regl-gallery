@@ -9,7 +9,7 @@
 
 const canvas = document.body.appendChild(document.createElement('canvas'))
 const fit = require('canvas-fit')
-const regl = require('../regl')(canvas)
+const regl = require('regl')(canvas)
 const mat4 = require('gl-mat4')
 const camera = require('canvas-orbit-camera')(canvas)
 window.addEventListener('resize', fit(canvas), false)

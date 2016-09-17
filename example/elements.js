@@ -3,7 +3,7 @@
 <p> This example demonstrates how you can use `elements` to draw lines. </p>
  */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 
 regl.clear({
   color: [0, 0, 0, 1],

@@ -14,7 +14,7 @@ const canvas = document.body.appendChild(document.createElement('canvas'))
 canvas.width = 1
 canvas.height = 1
 
-const regl = require('../regl')(canvas)
+const regl = require('regl')(canvas)
 
 var seedrandom = require('seedrandom')
 

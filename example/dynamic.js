@@ -4,7 +4,7 @@
   <p> This example shows how to pass props to draw commands </p>
 */
 
-const regl = require('../regl')()
+const regl = require('regl')()
 
 const draw = regl({
   frag: `
