@@ -51,6 +51,14 @@ p a:hover {
   margin: 40px 15px 0 0;
 }
 
+.example ul {
+  margin-left: 2em;
+}
+
+.example li {
+  list-style: disc;
+}
+
 #container {
   margin: 0 auto;
   max-width: 760px;
@@ -156,7 +164,7 @@ function generateGallery (files) {
   // parse all the necessary information from the example files:
   var pfiles = files.map(function (file, i) {
     var id = 'liId' + i
-    var li = `\n<li id="${id}">` // begin list item
+    var li = `\n<li class="example" d="${id}">` // begin list item
 
     var link = file.replace('example', 'gallery') + '.html'
 
@@ -333,7 +341,7 @@ function generateGallery (files) {
       </body>
     </html>`
 
-  fs.writeFile('www/gallery.html', html)
+  fs.writeFileSync('www/gallery.html', html)
 }
 
 mkdirp('www/gallery', function (err) {
